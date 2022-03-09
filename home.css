@@ -1,0 +1,320 @@
+body{
+    margin: auto; background-color: rgb(255, 255, 255);
+}
+
+.mydark{margin: auto; background-color: rgb(0, 0, 0);}
+/* Header Start */
+header{padding-top: 0;
+    height:50px;width: 100%;
+    background-color:rgb(0, 0, 0); 
+}
+.navbar-nav {
+    float: left;
+    margin-left: 150px; 
+}
+
+.navbar{width: 100%;}
+#icon{
+    float:left; text-decoration: none;
+}
+
+#social{
+    float:right;text-decoration: none;
+}
+
+button{background-color: rgb(0, 0, 0); color: white; float: right;height: 40px;margin-top: 5px;}
+
+
+.slogo{
+    height: 40px;
+    width: 40px;text-decoration: none;
+}
+
+h1{ color: red;display: inline; position: absolute;margin-top: 5px;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;}
+
+
+/* Search Start */
+#search{
+    height:400px;
+    background-image: url('image/food-wallpaper.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 500px;
+}
+
+#logo{
+    height:150px;
+    width:150px;
+    background-color: rgba(255, 255, 255,1);
+    border-radius: 50%;
+    margin-left:45%;
+    margin-top:1%;
+    position: absolute;
+    font-size:80px;
+    color:#e09c83;
+    animation:revolve 10s infinite;
+}
+
+@keyframes revolve {
+    0% {transform: rotate(30deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
+}
+
+/*
+#logo:hover{
+    background-color: rgba(255, 255, 255,.5);
+    color:#d85323;
+    transform: rotate(270deg);
+}
+*/
+
+#logo > span{
+    margin-left: 30%;
+    margin-top:15%;
+    position: absolute;
+}
+
+#heading{
+    margin-left:29%;
+    margin-top:10%;
+    position: absolute;
+    color:white;
+    font-size:45px;
+}
+
+.dropdown{
+    height:60px;
+    width:60%;
+    margin-left:27%;
+    margin-top:15%;
+    position:absolute;
+}
+
+select{
+    height:60px;
+    width:35%;
+    font-size:15px;
+    text-align:center;
+}
+
+.restlist{
+    width:50%  
+}
+a{
+    text-decoration:none
+}
+
+
+/* QuickSearch Start */
+#QuickSearch{
+    width:80%;
+    margin-left: 10%;
+    margin-top:5%;
+}
+#QuickHeading{
+    color:orange;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    display:block;
+    margin-left: 2%;text-align-last: center;
+}
+
+#QuickHeading:hover{
+    font-size:35px; 
+}
+
+#QuickSubHeading{
+    line-height: 2;
+    color:gray;
+    font-size:20px;
+    margin-left: 2%;text-align-last: center;
+}
+
+.tileContainer{
+    height:200px;
+    width:30%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    box-shadow: 10px 20px 10px gray;
+    animation: dance 10s infinite
+}
+
+.tileContainer:hover{
+    /*transform: scale(1.1);
+    transform: skewX(-20deg);
+    transform: rotate(20deg);*/
+    transform: scale(1.1)
+}
+
+@keyframes dance{
+    0% {transform: rotate(-5deg)}
+    25% {transform: rotate(0deg)}
+    50% {transform: rotate(5deg)}
+    60% {transform: scale(1.1)}
+    75% {transform: rotate(0deg)}
+    100% {transform: rotate(-5deg)}
+}
+
+
+.tileComponent1{
+    width:58%;
+    float: left;
+    height:200px;
+}
+.tileComponent1 > img{
+    height:200px;
+    width:100%;
+}
+.tileComponent2{
+    width:32%;
+    float: left;
+    height:100px;
+    margin-left: 7%;
+    margin-top: 15%;
+}
+.componentHeading{
+    font-size: 25px;
+    color:orange;
+}
+
+.componentHeading > a{
+    color:orange;
+}
+.componentSubHeading{
+    color:gray;
+}
+
+.carousel-inner>.item { 
+    height: 300px;
+    width: 100%;}
+
+    
+    h2{margin-top: 40%;color:orange;
+        font-size:30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight:bold;
+        display:block;
+        margin-left: 2%;text-align-last: center;}
+    
+    h3{color:orange;
+        font-size:30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight:bold;
+        display:block;margin-top: 40px;
+        margin-left: 2%;text-align-last: center}
+    
+    h4{ line-height: 2;
+        color:gray;
+        font-size:20px;text-align-last: center;}
+ .container{width: 78%;}
+    .carousel-inner{margin-top: 50px;}
+    /* .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        display: block;
+        max-width: 200%;
+        height: auto;
+        margin-left: 115px;
+    } */
+/* footer Start */
+
+.col-sm-4 img{width: 60px;height: 60px;}
+footer{
+    display:inline-block;
+    width:100%;
+    margin-top:2%;
+    height:200px;
+    color: gray;
+    background-color:#000000
+}
+
+.foot1{
+    width:35%;
+    height:70px;
+    float: left;
+    
+}
+
+@media screen and (max-width:1600px){
+    body{
+        background-color:lightblue
+    }
+}
+
+@media screen and (max-width:1400px){
+    body{
+        background-color:rgb(202, 241, 215)
+    }
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-color:rgb(237, 245, 209)
+    }
+    .tileContainer{
+        width:45%
+    }
+    #heading{
+        margin-top:22%;
+        margin-left: 23%;
+    }
+    .dropdown{
+        margin-top:30%;
+        margin-left: 29%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        background-color:rgb(242, 209, 245)
+    }
+    #logo{
+        margin-left:37%
+    }
+    #heading{
+        margin-top:25%;
+        margin-left:12%;
+    }
+    .dropdown {
+        margin-top: 35%;
+        margin-left: 24%;
+    }
+}
+@media screen and (max-width:800px){
+    body{
+        background-color:rgb(163, 240, 243)
+    }
+    .tileContainer{
+        width:90%
+    }
+    #heading{
+        font-size:38px;
+        margin-top:30%;
+        margin-left:4%;
+    }
+    .dropdown {
+        margin-top: 40%;
+        margin-left: 10%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        background-color:rgb(246, 202, 196)
+    }
+    #heading {
+        font-size: 34px;
+        margin-top: 45%;
+        margin-left: 0%;
+    }
+    .dropdown{
+        margin-top: 62%;
+        margin-left: 7%;
+    }
+}
